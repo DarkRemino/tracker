@@ -5,19 +5,34 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f0f0f0;
+    background-color: #1e1e1e; /* Dark background */
     height: 100vh;
     font-family: Arial, sans-serif;
 }
 
 .container
 {
-    color: #424B54;
-    background-color: white;
+    color: #d1d1d1; /* Light text color */
+    background-color: #333; /* Dark container background */
     text-align: center;
     padding: 50px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adjusted shadow for better visibility */
 }
 
-  
+sl-input::part(base)
+{
+    background-color: #555; /* Darker background for input field */
+    color: #fff; /* Light text color for input field */
+    border: 1px solid #777; /* Border color for input field */
+}
+
+sl-input::part(label)
+{
+    color: #bbb; /* Light color for label */
+}
+
+sl-input::part(focus-ring)
+{
+    box-shadow: 0 0 0 3px rgba(100, 149, 237, 0.5); /* Custom focus ring */
+}

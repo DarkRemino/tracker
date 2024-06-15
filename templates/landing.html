@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+    <div class="container">
+        <h5>Welcome to Fryon's Universal Package and Mail Tracker!</h5>
+        <h1>To get started, enter a package number in the field below:</h1>
+        <sl-input placeholder="Package/Mail tracking number..." id="main-tracker" filled>
+            <sl-icon name="box-seam"></sl-icon>
+        </sl-input>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+    <script async>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const input = document.getElementById('main-tracker');
+      input.focus();
+    });
+  </script>
+{% endblock %}
