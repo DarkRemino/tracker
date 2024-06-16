@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+  <h1>To get started, enter a package number in the field below:</h1>
+
+  <form action="/" method="post">
+
+    <div class="input-container">
+
+      <sl-button type="primary">Track</sl-button>
+
+      <sl-input class="sl-theme-light input-tracker" placeholder="Package/Mail tracking number..." id="main-tracker" name="tracking_number" filled>
+        
+        <sl-icon name="box-seam" slot="prefix"></sl-icon>
+      
+      </sl-input> <br>
+
+    </div>
+
+  </form>
+  
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<!-- <script async>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const input = document.getElementById('main-tracker');
+      input.focus();
+    });
+  </script> -->
+{% endblock %}
