@@ -3,16 +3,16 @@
 
 import mariadb
 from dotenv import load_dotenv
-import os
+from config import MDB_HOST, MDB_USER, MDB_PASSWORD, MDB_SCHEMA
 
 load_dotenv()
 # If you're wondering where these vars come from, check .env.example
 def db_create_connection():
     conn = mariadb.connect(
-        host = os.getenv('MDB_HOST'),
-        user = os.getenv('MDB_USER'),
-        password = os.getenv('MDB_PASSWORD'),
-        database = os.getenv('MDB_SCHEMA')
+        host = MDB_HOST,
+        user = MDB_USER,
+        password = MDB_PASSWORD,
+        database = MDB_SCHEMA
     )
     return conn
 

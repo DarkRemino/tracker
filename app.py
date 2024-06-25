@@ -1,8 +1,9 @@
 from flask import Flask, render_template, url_for, session, request, flash
 from mdb import db_create_connection, db_submit_request
+from config import SECRET_KEY
 
 app = Flask(__name__)
-app.config['SECRET_KEY']='AS(_32n)AS9a+@+$"='
+app.config['SECRET_KEY']= SECRET_KEY
 
 @app.route('/')
 def index():
