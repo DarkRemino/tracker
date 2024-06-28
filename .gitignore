@@ -3,3 +3,4 @@ __pycache__/
 wsgi.py
 .env
 config.py
+.idea
