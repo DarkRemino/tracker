@@ -7,11 +7,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-        <script src="{{ url_for('static', filename='js/script.js')}}" async></script>
+        <script src="{{ url_for('static', filename='js/script.js') }}" async></script>
 
         <!-- Shoelace CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/light.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/light.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"/>
         <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js" async></script>
 
         <title>Fryon's Package Tracker</title>
@@ -19,24 +19,24 @@
 </head>
 
 <body>
-    <!-- Flashed messages section -->
-    {% with messages = get_flashed_messages()  %}
-        {% if messages %}
-            {% for item in messages %}
-                <sl-alert variant="warning" open>
-                    <sl-icon slot="icon" name="exclamation-triangle"></sl-icon>
-                    <strong>{{ item }}</strong>
-                </sl-alert>
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
+<!-- Flashed messages section -->
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for item in messages %}
+            <sl-alert variant="warning" open>
+                <sl-icon slot="icon" name="exclamation-triangle"></sl-icon>
+                <strong>{{ item }}</strong>
+            </sl-alert>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
 
-    {% block content %}{% endblock %}
+{% block content %}{% endblock %}
 </body>
 
 <!-- Didn't think this was needed, but there are some misc scripts that help -->
 {% block scripts %}
-    
+
 {% endblock %}
 
 </html>

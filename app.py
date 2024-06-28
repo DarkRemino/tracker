@@ -3,15 +3,16 @@ from mdb import db_create_connection, db_submit_request
 from config import SECRET_KEY
 
 app = Flask(__name__)
-app.config['SECRET_KEY']= SECRET_KEY
+app.config['SECRET_KEY'] = SECRET_KEY
+
 
 @app.route('/')
 def index():
     return render_template('index.html')
 
+
 @app.route('/track', methods=['GET', 'POST'])
 def landing():
-    
     conn = db_create_connection()
     cur = conn.cursor()
 
