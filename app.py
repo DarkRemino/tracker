@@ -1,10 +1,14 @@
-from flask import Flask, render_template, url_for, request, flash, redirect
+from flask import Flask, render_template, url_for, request, flash, redirect, session
+from flask_session import Session
 from mdb import db_submit_request, db_register_user, db_login_user
 from forms import RegistrationForm, LoginForm
 from config import SECRET_KEY
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = SECRET_KEY
+app.config['SESSION_TYPE'] = 'filesystem'  # used only for temporary session resolving, will be changed with a Redis instance
+
+Session(app)  # This is the implementation of Flask_Session, do not touch it, it's supposed to be like that
 
 
 @app.route('/')
@@ -18,6 +22,7 @@ def landing():
     if request.method == 'POST':
 
         tracking_number = request.form['tracking_number']
+        session['tracking_number'] = tracking_number
 
         db_submit_request(tracking_number)
         flash('Your package number was submitted successfully!')
