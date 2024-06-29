@@ -13,16 +13,13 @@ def index():
 
 @app.route('/track', methods=['GET', 'POST'])
 def landing():
-    conn = db_create_connection()
-    cur = conn.cursor()
 
     if request.method == 'POST':
-        tracking_number = request.form.get("tracking_number")
-        db_submit_request(tracking_number, cur)
-        flash('Your package number was submitted successfully!')
 
-        cur.close()
-        conn.close()
+        tracking_number = request.form['tracking_number']
+
+        db_submit_request(tracking_number)
+        flash('Your package number was submitted successfully!')
 
         return render_template('track-search.html')
 

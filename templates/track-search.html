@@ -6,7 +6,7 @@
 
         <h1>To get started, enter a package number in the field below:</h1>
 
-        <form action="/track" method="post">
+        <form action="{{ url_for('landing') }}" method="post">
 
             <div class="input-container">
                 <sl-button type="submit">Track</sl-button>
