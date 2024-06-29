@@ -32,6 +32,14 @@ def landing():
     return render_template('track-search.html')
 
 
+# This is just in testing now, it doesn't really do anything right now
+@app.route('/track-result')
+def track_result():
+
+    tracking_number = session.get('tracking_number')
+
+    return render_template('track-result.html')
+
 @app.route('/register', methods=['GET', 'POST'])
 def register():
 

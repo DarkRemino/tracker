@@ -4,3 +4,4 @@ wsgi.py
 .env
 config.py
 .idea
+flask_session/
