@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block content %}
+    <form id="register_form" action="{{ url_for('register') }}" method="post">
+        {{ register_form.hidden_tag() }}
+
+        {{ register_form.email.label }} <br>
+        {{ register_form.email() }} <br>
+        {{ register_form.password1.label }} <br>
+        {{ register_form.password1() }} <br>
+        {{ register_form.password2.label }} <br>
+        {{ register_form.password2() }} <br>
+        {{ register_form.tos() }} {{ register_form.tos.label }} <br>
+        {{ register_form.newsletter() }} {{ register_form.newsletter.label }} <br>
+
+        <button type="submit" form="register_form">Register</button>
+
+    </form>
+{% endblock %}

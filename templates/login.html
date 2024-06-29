@@ -1,5 +1,15 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <form id="login_form" action="{{ url_for('login') }}" method="post">
+        {{ login_form.hidden_tag() }}
 
+        {# Implementation of the form goes here #}
+        {{ login_form.email.label }} <br>
+        {{ login_form.email() }} <br>
+        {{ login_form.password.label }} <br>
+        {{ login_form.password() }} <br>
+
+        <button type="submit" form="login_form">Login</button>
+    </form>
 {% endblock %}

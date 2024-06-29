@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, session, request, flash, redirect
+from flask import Flask, render_template, url_for, request, flash, redirect
 from mdb import db_submit_request, db_register_user, db_login_user
 from forms import RegistrationForm, LoginForm
 from config import SECRET_KEY
@@ -67,4 +67,4 @@ def login():
             flash("Welcome, " + email)
             return redirect(url_for('landing'))
 
-    return render_template('login.html')
+    return render_template('login.html', login_form=login_form)
