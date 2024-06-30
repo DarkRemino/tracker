@@ -23,7 +23,7 @@
 {% with messages = get_flashed_messages() %}
     {% if messages %}
         {% for item in messages %}
-            <sl-alert variant="warning" open>
+            <sl-alert variant="warning" class="flash" open>
                 <sl-icon slot="icon" name="exclamation-triangle"></sl-icon>
                 <strong>{{ item }}</strong>
             </sl-alert>
