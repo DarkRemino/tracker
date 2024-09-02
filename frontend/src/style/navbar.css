@@ -1,0 +1,54 @@
+.navbar-left {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    padding-left: 2rem;
+}
+
+.navbar-center {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.navbar-right {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+nav {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 4rem;
+    align-items: baseline;
+    padding: 0; /* TODO: figure out why there is left padding here by default */
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            padding-right: 1rem;
+            padding-left: 1rem;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+        }
+
+    }
+
+}

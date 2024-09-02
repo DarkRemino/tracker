@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* This style is applied to the whole body for consistency */
+body {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h1 {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bolder;
+    font-optical-sizing: auto;
+}
+
+h2 {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    font-optical-sizing: auto;
+}
+
+h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: normal;
+    font-optical-sizing: auto;
+}
+
+p {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: normal;
+    font-optical-sizing: auto;
+}
+
+a {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bolder;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    text-decoration: underline;
+}
