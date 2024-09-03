@@ -21,13 +21,15 @@ const Login = () => {
     }
 
     return (
-        <div class='container'>
-            <h1>Login</h1>
-            <form onSubmit={handleSubmit}>
+            <form className='container' onSubmit={handleSubmit}>
                 <input type='text' placeholder='Username' onChange={handleUsernameChange} />
                 <input type='password' placeholder='Password' onChange={handlePasswordChange} />
-                <button type='submit'>Login</button>s
+                <h3 className='clickable'>
+                    <button type='submit'>Login</button>
+                </h3>
+
             </form>
-        </div>
     );
 }
+
+export default Login;

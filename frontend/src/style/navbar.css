@@ -2,7 +2,7 @@
     display: flex;
     flex: 1;
     justify-content: flex-start;
-    padding-left: 2rem;
+    margin-left: 2rem;
 }
 
 .navbar-center {
@@ -15,7 +15,7 @@
     display: flex;
     flex: 1;
     justify-content: flex-end;
-    padding-right: 2rem;
+    margin-right: 2rem;
 }
 
 nav {
@@ -35,20 +35,22 @@ nav {
         padding: 0;
 
         li {
-            padding-right: 1rem;
-            padding-left: 1rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
             text-align: center;
 
             a {
                 text-decoration: none;
-
-                &:hover {
-                    text-decoration: underline;
-                }
             }
 
         }
 
+    }
+
+    h3 {
+        a {
+            text-decoration: none;
+        }
     }
 
 }

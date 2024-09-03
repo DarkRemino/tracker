@@ -1,0 +1,25 @@
+input {
+
+    background-color: #17191D;
+    color: #ECEFEE;
+    border: none;
+    border-bottom: 1px solid #ECEFEE;
+
+    margin-bottom: 1rem;
+
+    &:focus {
+        outline: none;
+    }
+
+}
+
+button {
+    border: none;
+    background-color: inherit;
+    color: inherit;
+
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-optical-sizing: inherit;
+}

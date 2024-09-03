@@ -19,7 +19,7 @@ h2 {
 
 h3 {
     font-family: 'JetBrains Mono', monospace;
-    font-weight: normal;
+    font-weight: bold;
     font-optical-sizing: auto;
 }
 
@@ -35,4 +35,11 @@ a {
     font-optical-sizing: auto;
     text-decoration: none;
     text-decoration: underline;
+}
+
+input {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: lighter;
+    font-optical-sizing: auto;
+    font-style: normal;
 }

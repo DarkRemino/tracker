@@ -1,0 +1,30 @@
+@keyframes clickableHover {
+    0% {
+        background-color: #17191D;
+        color: #ECEFEE;
+    }
+
+    100% {
+        background-color: #ECEFEE;
+        color: #17191D;
+    }
+}
+
+.clickable {
+
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+
+    /* These 2 are here to make the animation look good */
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    border-radius: 0.2rem;
+
+    &:hover {
+        animation: clickableHover 0.2s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    
+}

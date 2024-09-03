@@ -4,19 +4,19 @@ const Navbar = () => {
     return (
         <nav>
             <div className='navbar-left'>
-                <h3>Tracker v0.1</h3>
+                <h3 className='clickable'>Tracker v0.1.0</h3>
             </div>
 
             <div className='navbar-center'>
                 <ul>
-                    <li><a href='/'>Home</a></li>
-                    <li><a href='/login'>About</a></li>
-                    <li><a href='/register'>Contact</a></li>
+                    <li className='clickable'><a href='/'>Home</a></li>
+                    <li className='clickable'><a href='/about'>About</a></li>
+                    <li className='clickable'><a href='/contact'>Contact</a></li>
                 </ul>
             </div>
 
             <div className='navbar-right'>
-                <h3>Login</h3>
+                <h3 className='clickable'><a href="/login">Login</a></h3>
             </div>
         </nav>
     );
