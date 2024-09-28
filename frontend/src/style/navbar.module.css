@@ -1,21 +1,21 @@
-.navbar-left {
+.navbarLeft {
     display: flex;
     flex: 1;
     justify-content: flex-start;
-    margin-left: 2rem;
+    padding-left: 1rem;
 }
 
-.navbar-center {
+.navbarCenter {
     display: flex;
     flex: 1;
     justify-content: center;
 }
 
-.navbar-right {
+.navbarRight {
     display: flex;
     flex: 1;
     justify-content: flex-end;
-    margin-right: 2rem;
+    padding-right: 1rem;
 }
 
 nav {
@@ -25,6 +25,7 @@ nav {
     width: 100%;
     height: 4rem;
     align-items: baseline;
+    justify-content: space-between;
     padding: 0; /* TODO: figure out why there is left padding here by default */
 
     ul {

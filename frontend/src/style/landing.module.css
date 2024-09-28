@@ -1,7 +1,8 @@
-.landing-heading {
+.landingHeading {
     text-align: center;
 }
 
-.landing-paragraph {
+.landingParagraph {
     text-align: center;
+    max-width: 40rem;
 }
