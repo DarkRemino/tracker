@@ -1,0 +1,36 @@
+@import url(animations.css);
+@import url(fonts.css);
+
+html, body {
+    display: flex;
+    background-color: #17191D;
+    color: #ECEFEE;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    background-color: inherit;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+input {
+    background-color: inherit;
+    border: 0;
+    border-bottom: 1px solid #ECEFEE;
+    color: #ECEFEE;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: #17191D;
+    color: #ECEFEE; 
+}

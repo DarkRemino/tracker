@@ -6,6 +6,7 @@ input {
     border-bottom: 1px solid #ECEFEE;
 
     margin-bottom: 1rem;
+    /* padding-bottom: 0.4rem; */
 
     &:focus {
         outline: none;

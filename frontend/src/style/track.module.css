@@ -1,0 +1,19 @@
+input {
+
+    background-color: #17191D;
+    color: #ECEFEE;
+    border: none;
+    border-bottom: 1px solid #ECEFEE;
+    width: 20rem;
+
+    margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+form {
+    width: 40rem;
+}
